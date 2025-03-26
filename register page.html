@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="images/logo3.jpg">
+  <title>Register page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/bd1694eae1.js" crossorigin="anonymous">
+</script>
+</head>
+
+<body>
+  <header>
+    <a href="#">
+    <img src="images/logo3.jpg" alt="logo-image" class="logo-image">
+    </a>
+    <div class="header">
+      <h1 style="font-size:60px;">Information and Technology College</h1>
+      <h2>Welcome to the Register Page</h2>
+    </div>
+    <div class="navbar">
+      <a href="#" class="icon-block">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+    </a>
+    <div class="dropdown">
+      <a href="course.html" class="icon-block">
+       <i class="fa-solid fa-person-chalkboard"></i>
+       <span>Our courses</span>
+    </a>
+      <div class="dropdown-content">
+        <a href="computer science2.html">Computer science</a>
+        <a href="Cyber Security.html">Cyber Security</a>
+        <a href="software Engineering.htm">Software Engineering</a>
+      </div>
+    </div>
+     <a href="register page.html" class="icon-block">
+    <i class="fa-solid fa-user-plus"></i>
+    <span>Register</span>
+    </a>
+      <a href="#" class="icon-block">
+    <i class="fa-solid fa-circle-info"></i>
+    <span>Help & support</span>
+    </a>
+    </div>
+  </header>
+
+    <body>
+    <div class="page-container">
+      <div class="left-sidebar"></div>
+    <form class="form" id="application-form">
+    <form action="/submit.py" method="post">
+
+      <br><div><img src="Images/college.jpg" alt="college" class="college-image"></div>
+
+    <h3 class="custom-h3"> Registery Form</h3>
+    <h5>Please complete the form below to submit your application (Any queries or issues regarding this please use the contact information at the bottom of the page)</h5>
+    <h5>Any relevant documentation please upload at the end of the application</h5>
+    <label class="form-label" for="Forename">Forename:</label>
+    <input class="form-input" type="text" id="forename" name="forename" placeholder="John" required title="Please enter your forename"><br>
+
+    <label class="form-label" for="Surname">Surname:</label>
+    <input class="form-input" type="text" id="surname" name="surname" placeholder="Doe" required title="Please enter your surname"><br>
+    
+    <label class="form-label" for="email">Email:</label>
+    <input class="form-input" type="text" id="email" name="email" placeholder="example@gmail.com" required title="please enter your email"><br>
+    
+    <label class="form-label" for="year-of-study">Year of Study:</label>
+    <select class="form-input" id="year-of-study" name="year-of-study" placeholder="Select your Year of Study" required>
+      <option value="Select your Year of Study">Select your Year of Study</option>
+      <option value="1st Year">1st Year</option>
+      <option value="2nd Year">2nd Year</option>
+      <option value="3rd Year">3rd Year</option>
+      <option value="4th Year">4th Year</option>
+    </select><br>
+
+      <label class="form-label" for="Select-your-course-of-study">Select your course of study:</label>
+      <select class="form-input" id="Select-your-course-of-study" name="Select-your-course-of-study" placeholder="Select your course of study" required>
+        <option value="Select a Course">Select a Course</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Software Engineering">Software Engineering</option>
+        <option value="Cyber Security">Cyber Security</option>
+    </select><br>
+
+    <label class="form-label" for="personal-statement">Personal Statement:</label>
+    <textarea id="personal-statement" name="personal-statement" placeholder="Write a brief paragraph on why you would be a suitable student for the college" required title="please complete your personal statement"></textarea><br><br>
+
+    <div class="form-buttons">
+      <button type="submit">Submit Application Form</button><br>
+      <input type="file" id="fileInput" onchange="displayFileName()">
+      <p id="fileNameDisplay"></p>
+
+      <div class="right-sidebar"></div>
+
+      <script>
+        function displayFileName() {
+    // Get the file input element
+        var fileInput = document.getElementById("fileInput");
+    
+    // Get the file name from the value attribute of the file input element
+        var fileName = fileInput.value;
+    
+    // Display the file name in the element with the ID "fileNameDisplay"
+        document.getElementById("fileNameDisplay").innerHTML = fileName;
+  }
+    </script>
+    </form>
+    </form>
+    </div>
+
+<body>    
+<head>
+   <title>Upload multiple files</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+</body>
+</div>
+
+<div class="footer">
+  <P> &copy; Information and Technology College</P>
+  <p> contact us on: </p>
+  <div class="share">
+    <a href="#" class="icon-block">
+    <i class="fa-brands fa-facebook"style="font-size:24px;"></i>
+    </a>
+    <a href="#" class="icon-block">
+    <i class="fa-brands fa-twitter" style="font-size:24px;"></i>
+    </a>
+    <a href="#" class="icon-block">
+    <i class="fa-brands fa-instagram" style="font-size:24px;"></i>
+    </a>
+    <a href="#" class="icon-block">
+    <i class="fa-brands fa-linkedin" style="font-size:24px;"></i>
+    </a>
+    <p> e-mail: info@CoIT.co.uk </p>
+    <p> Phone No. 071235 157896 </p>
+  </div>
+</body>
+</html>

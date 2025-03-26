@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Course page-software</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="shortcut icon" type="image/png" href="images/logo3.jpg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/bd1694eae1.js" crossorigin="anonymous">
+</script>
+
+<style>
+  *{
+    box-sizing: border-box;
+  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+/* Style the header */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: #464140;
+  color: white;
+}
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+/* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 70%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 30%; /* Set the width of the main content */
+  background-color: #f1f1f1; /* White background color */
+  padding: 20px; /* Some padding */
+}
+
+
+/* Style the dropdown menu */
+.dropdown {
+  position: relative;
+  display:inline-inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display:inline-block;
+  background-color: #454; /* Grey background color */
+  color:#ddd;
+}
+
+.fakeimg{
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  background: #ddd;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  border-radius: 15px;
+}
+.card-image{
+  height: 180px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.c-1{
+  background-image: url(img/data.jpg);
+}
+.c-2{
+  background-image: url(img/soft.jpg);
+}
+.card h2{
+  padding: 10px
+}
+.card p{
+  padding: 10px
+}
+.card a{
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+}
+.footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+.banner {
+  background-color: lightblue;
+  display: flex;
+}
+
+.banner-left,
+.banner-right {
+  flex: 1;
+  padding: 20px;
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <a href="#">
+    <img src="images/logo3.jpg" alt="logo-image" class="logo-image">
+    </a>
+  <h1 style="font-size:60px;">Information and Technology College</h1>
+  <h2>Our Courses-'Cyber Security'</h2>
+</div>
+
+<div class="navbar">
+  <a href="#" class="icon-block">
+    <i class="fa-solid fa-house" style="font-size:24px;"></i>
+    <span>Home</span>
+  </a>
+
+<div class="dropdown">
+ <a href="course.html" class="icon-block">
+<i class="fa-solid fa-person-chalkboard" style="font-size:24px;"></i>
+<span>Our courses</span>
+</a>
+<div class="dropdown-content">
+     <a href="computer science2.html">Computer science</a>
+     <a href="Cyber Security.html">Cyber Security</a>
+     <a href="Software Engineering.htm">Software Engineering</a>
+   </div>
+ </div>
+
+<a href="register page.html" class="icon-block">
+  <i class="fa-solid fa-user-plus" style="font-size:24px;"></i>
+  <span>Register</span>
+</a>
+
+<a href="#" class="icon-block">
+<i class="fa-solid fa-circle-info" style="font-size:24px;"></i>
+<span>Help & support</span>
+</a>
+</div>
+
+
+<div class="row">
+  <div class="side">
+     <div class="main">
+
+     </div>
+    <h2>Cyber Security</h2>
+    <div class="banner">
+      <div class="banner-left">
+        <h2>Qualification Requirement</h2>
+        <p><b>A/AS-levels:</b> ABB. Two AS-levels considered in place of one A-level.</p>
+        <p><b>GCSE:</b> Grade B/5 in Maths.</p>
+        <p><b>Access to HE Diploma:</b> Pass relevant diploma with a minimum of 45 credits at level 3, 30 of which must be at Distinction..</p>
+        <p><b>English Language:</b> IELTS 6.0 or equivalent.</p>
+          </div>
+          <div class="banner-right">
+            <h2>Other information</h2>
+            <p><b>Course code:</b> G320</p>
+            <p><b>Duration:</b> 3years full-time, 4 years with placement</p>
+            <p><b>Fees:</b> Home/ Students: £9,250. International: £14,000</p>
+            <p><b>Module Leader:</b> Mr Willson </p>
+          </div>
+        </div>
+    <h3>Module Contents</h3>
+      <table style="width:70%">
+      <tr>
+    <th>Module Code</th>
+    <th>Module Title & Description</th>
+
+
+      </tr>
+      <tr>
+        <td>SE3901</td>
+        <td>C Programming is  used for developing operating systems,
+          as well as for creating applications for a variety of platforms.
+        It is easier to read and write than low-level languages like assembly language. </td>
+      </tr>
+      <tr>
+        <td>SE3902</td>
+        <td>Computer Law and Cyber Security Management are two fields that deal with the legal and
+          managerial elements of computer technology and the protection of information assets.</td>
+      </tr>
+      <tr>
+        <td>SE3903</td>
+        <td>Linux Security is studying  security features and strong protection
+           against viruses and other types of malware of it operating system. </td>
+      </tr>
+      <tr>
+        <td>SE3904</td>
+        <td>Cyber Threat Intelligence and Incident Response is the collection and analysis of
+          information about cyber threats and adversaries, and the process of responding to and
+          managing the aftermath of a cyber security incident,  </td>
+      </tr>
+      <tr>
+        <td>SE3905</td>
+        <td>Malware analysis is the process of studying and analyzing malicious software (malware)
+          in order to understand how it works and what it does. </td>
+      </tr>
+      <tr>
+        <td>IMAT3611</td>
+        <td>Computer Ethics and Privacy is the study of the ethical implications of computer
+          technology and its impact on society.</td>
+      </tr>
+      <tr>
+        <td>SE3451</td>
+        <td>Development Project  is a planned and organized effort to create, improve, or extend a product, service, or system </td>
+      </tr>
+    </table><br/>
+
+
+<h3> Our other courses we offer </h3>
+
+  </div>
+
+  <section class="container">
+      <div class="card">
+        <div class="card-image c-1"></div>
+        <h2> Computer Science  </h2>
+        <p> The Computer Science course at... </p>
+        <a href="computer science2.html">Read more</a>
+      </div>
+      <div class="card">
+        <div class="card-image c-2"></div>
+        <h2> Software Engineering </h2>
+        <p> Information and Technology College's... </p>
+        <a href="Software Engineering.htm">Read more</a>
+      </div>
+    </section>
+</div>
+<div class="footer">
+<P> &copy; Information and Technology College</P>
+<p> contact us on: </p>
+<div class="share">
+  <a href="#" class="icon-block">
+  <i class="fa-brands fa-facebook"style="font-size:24px;"></i>
+  </a>
+  <a href="#" class="icon-block">
+  <i class="fa-brands fa-twitter" style="font-size:24px;"></i>
+  </a>
+  <a href="#" class="icon-block">
+  <i class="fa-brands fa-instagram" style="font-size:24px;"></i>
+  </a>
+  <a href="#" class="icon-block">
+  <i class="fa-brands fa-linkedin" style="font-size:24px;"></i>
+  </a>
+  <p> e-mail: info@CoIT.co.uk </p>
+  <p> Phone No. 071235 157896 </p>
+</div>
+</body>
+</html>

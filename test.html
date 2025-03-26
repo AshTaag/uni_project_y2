@@ -1,0 +1,63 @@
+<form action="/apply" method="post">
+    <label for="first-name">First Name:</label><br>
+    <input type="text" id="first-name" name="first-name"><br>
+
+    <label for="last-name">Last Name:</label><br>
+    <input type="text" id="last-name" name="last-name"><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+
+    <label for="phone">Phone:</label><br>
+    <input type="tel" id="phone" name="phone"><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br>
+
+    <label for="year-of-study">Year of Study:</label><br>
+    <select id="year-of-study" name="year-of-study">
+      <option value="Select Year of Study">Select Year of Study</option>
+      <option value="1st Year">1st Year</option>
+      <option value="2nd Year">2nd Year</option>
+      <option value="3rd Year">3rd Year</option>
+    </select><br>
+
+    <label for="education">Course to study:</label><br>
+    <select id="education" name="education">
+      <option value="Select a Course">Select a Course</option>
+      <option value="Computer Science">Computer Science</option>
+      <option value="Software Engineering">Software Engineering</option>
+      <option value="Cyber Security">Cyber Security</option>
+    </select><br>
+
+    <label for="essay">Personal Statement:</label><br>
+    <textarea id="essay" name="essay"></textarea><br>
+    <input type="submit" value="Submit">
+  </form> 
+  
+
+
+
+  flex: 70%; /* Set the width of the sidebar */
+  background-color: #ddd; /* Grey background color */
+  position: fixed; /* fix the sidebar to a fixed position on the page */
+  top: 80px; /* set the top position of the sidebar */
+  right: 0; /* set the left position of the sidebar */
+  width: 20%; /* set the width of the sidebar */
+  height: 100%; /* set the height of the sidebar to fill the entire page */
+  overflow: auto; /* add scrollbars if the content is too long */
+  padding: 20px; /* Some padding */
+  margin-top: 170px;
+
+
+  button {
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: slategrey;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
